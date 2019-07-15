@@ -1,8 +1,8 @@
-package com.v1ok.db.service;
+package com.v1ok.db.model;
 
 import java.util.Date;
 
-public interface ICreateBy {
+public interface ICreateByModel {
 
   Long getCreateBy();
 

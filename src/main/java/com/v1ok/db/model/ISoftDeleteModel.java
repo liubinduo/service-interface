@@ -1,6 +1,6 @@
-package com.v1ok.db.service;
+package com.v1ok.db.model;
 
-public interface ISoftDelete {
+public interface ISoftDeleteModel {
 
   Boolean isDeleted();
 

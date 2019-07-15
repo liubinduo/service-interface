@@ -1,8 +1,8 @@
-package com.v1ok.db.service;
+package com.v1ok.db.model;
 
 import java.util.Date;
 
-public interface IUpdateBy {
+public interface IUpdateByModel {
 
   Long getUpdateBy();
 

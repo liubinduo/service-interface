@@ -1,8 +1,8 @@
-package com.v1ok.db.service;
+package com.v1ok.db.model;
 
 import java.util.Map;
 
-public interface IExtends {
+public interface IExtendsModel {
 
   Map<String, Object> getExt();
 
