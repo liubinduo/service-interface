@@ -17,11 +17,9 @@ public interface IService<T, ID extends Serializable> {
 
   boolean exists(String propertyName, Object value);
 
-
   Optional<T> findOne(ID id);
 
   Optional<T> findOne(String propertyName, Object value);
-
 
   List<T> findAll();
 
@@ -33,11 +31,11 @@ public interface IService<T, ID extends Serializable> {
 
   Page<T> pageQuery(int pageNo, int pageSize);
 
-  Page<T> pageQuery(T example, int pageNo, int pageSize);
-
   Page<T> pageQuery(String propertyName, Object value, int pageNo, int pageSize);
 
-  Page<T> pageSearch(T example, int pageNo, int pageSize);
+  Page<T> pageQueryORExample(T example, int pageNo, int pageSize);
+
+  Page<T> pageQueryANDExample(T example, int pageNo, int pageSize);
 
   Page<T> pageSearch(QueryBean queryBean);
 
