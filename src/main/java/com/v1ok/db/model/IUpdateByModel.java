@@ -4,9 +4,9 @@ import java.util.Date;
 
 public interface IUpdateByModel {
 
-  Long getUpdateBy();
+  String getUpdateBy();
 
-  void setUpdateBy(Long updateBy);
+  void setUpdateBy(String updateBy);
 
   Date getUpdateTime();
 

@@ -1,5 +1,6 @@
 package com.v1ok.db.service;
 
+import com.v1ok.db.model.IEntityModel;
 import com.v1ok.db.support.QueryBean;
 import java.io.Serializable;
 import java.util.List;
@@ -9,7 +10,7 @@ import org.springframework.data.domain.Page;
 /**
  * Created by liubinduo on 2017/6/28.
  */
-public interface IService<T, ID extends Serializable> {
+public interface IService<T extends IEntityModel, ID extends Serializable> {
 
   boolean exists(ID id);
 

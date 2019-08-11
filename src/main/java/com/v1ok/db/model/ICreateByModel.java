@@ -4,9 +4,9 @@ import java.util.Date;
 
 public interface ICreateByModel {
 
-  Long getCreateBy();
+  String getCreateBy();
 
-  void setCreateBy(Long createBy);
+  void setCreateBy(String createBy);
 
   Date getCreateTime();
 
